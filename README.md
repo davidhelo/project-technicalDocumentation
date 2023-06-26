@@ -1,3 +1,3 @@
-# Technical Documentation
+# Technical Documentation Page
 
-Technical documentation using HTML and CSS.
+Technical documentation page created using HTML and CSS.
