@@ -2,4 +2,4 @@
 
 Technical documentation page created using HTML and CSS.
 
-See live page [https://davidhelo.github.io/project-technicalDocumentation/](here).
+See live page [here]([here](https://davidhelo.github.io/project-technicalDocumentation/)https://davidhelo.github.io/project-technicalDocumentation/).
