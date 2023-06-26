@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation | David Hernandez</title>
+</head>
+<body>
+<nav id="navbar">
+  <header>CSS basics documentation</header>
+  <ul>
+    <a class="nav-link" href="#CSS_introduction"><li>CSS introduction</li></a>
+    <a class="nav-link" href="#Before_you_start_with_CSS"><li>Before you start with CSS</li></a>
+    <a class="nav-link" href="#Definitions"><li>Definitions</li></a>
+    <a class="nav-link" href="#Selectors"><li>Selectors</li></a>
+    <a class="nav-link" href="#Descendant_selectors"><li>Descendant selectors</li></a>
+  </ul>
+</nav>
+<!-- starts main-doc -->
+<main id="main-doc">
+  <section class="main-section" id="CSS_introduction">
+    <header>CSS introduction</header>
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+    <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+    <p>Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+  </section>
+  <section class="main-section" id="Before_you_start_with_CSS">
+    <header>Before you start with CSS</header>
+    <p>Before you start learning CSS it is important you should have:</p>
+    <ul>
+      <li>Knowledge to read and write.</li>
+      <li>A basic knowledge of computers.</li>
+      <li>A basic knowledge on how internet works.</li>
+      <li>Basic knowledge of HTML.</li>
+      <li>A computer.</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Definitions">
+    <header>Definitions</header>
+    <p>In CSS there are three types of definitions:</p>
+    <ul>
+      <li>Inline:
+        <p>This is when the styling is defined in the HTML element tag. For Example:</p>
+        <code>&#60p style="color: red;"&#62 This paragraph will be red. &#60&#47p&#62</code>
+        <p>Result:</p><p style="color: red;"> This paragraph is be red. </p>
+      </li>
+      <li>Internal: 
+        <p>For this, the CSS formating is defined in the HTML tag &#60style&#62 inside the HTML document. For Example:</p>
+        <code>&#60style&#62
+          p &#123 color: blue; &#125 &#60&#47style&#62</code>
+        <p>Result:</p><p style="color: blue;"> This paragraph is be blue. </p>
+      </li>
+      <li>External: 
+        <p>This type of declaration is made in a separated CSS document. For Example:</p>
+        <code>p &#123 background: green; &#125</code>
+        <p>Result:</p><p style="background: green;"> This paragraph has green background. </p>
+      </li>
+    </ul>
+  </section>
+  <section class="main-section" id="Selectors">
+    <header>Selectors</header>
+    <p>The selectiom determines which part of the markup the style is applied. The most important selectors are:</p>
+    <ul>
+      <li>Type selector: 
+        <p>This selects all the elements of a specific type. For Example, the next code will apply blue color to all the h1 elements in the HTML:</p>
+        <code>h1 &#123 color: blue; &#125</code>
+       </li>
+      <li>Id selector: 
+        <p>This selects all the elements of a specific id attribute. For Example, the next code will apply blue color to all elements with id="hello", for id's the character # should be used before:</p>
+        <code>#hello &#123 color: blue; &#125</code>
+       </li>
+      <li>Class selector: 
+        <p>This selects all the elements of a specific class. For Example, the next code will apply blue color to all elements with class="bye", for class selectors should be used dot character before:</p>
+        <code>.bye &#123 color: blue; &#125</code>
+       </li>
+    </ul>
+  </section>
+  <section class="main-section" id="Descendant_selectors">
+    <header>Descendant selectors</header>
+    <p>This selector consists in defining elements that are parented. For example, the next code will apply the style to all the &#60p&#62 elements that are inside elements with "#container" id:</p>
+    <code>&#35container p &#123 color: blue; &#125</code>
+    <p>Adding a &#62 character will restrict in a way that strictly only the &#60p&#62 elements which are directly child of "#container" id's. Example:</p>
+    <code>&#35container &#62 p &#123 color: blue; &#125</code>
+  </section>
+</main>
+<footer>
+  <p> Created by David </p>
+</footer>
+</body>
+</html>
